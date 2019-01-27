@@ -1,13 +1,5 @@
 <?php
 	
-/*
-	Plugin Name: Abre Directory Plugin
-	Plugin URI: https://abre.io
-	Description: Pulls data from the Abre Directory Module
-	Author: Christopher Rose
-	Version: 1.0
-*/
-
 function directorylookup($atts, $content=null)
 {
 	extract(shortcode_atts( array('building' => '','heading' => ''), $atts));
