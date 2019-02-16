@@ -4,7 +4,7 @@ function directorylookup($atts, $content=null)
 {
 	extract(shortcode_atts( array('building' => '','heading' => ''), $atts));
 	$building = str_replace(" ", "%20", $building);
-	$json=file_get_contents("https://hcsdoh.org/modules/directory/feed.php?building=$building");
+	$json=file_get_contents("https://subdomain.abre.io/modules/Abre-Directory/feed.php?building=$building");
 	$data = json_decode($json);
 	echo "<h2>$heading</h2>";
 	echo "<div class='fusion-table table-1'><table width='100%' class='tablesorter {sortlist: [[1,0]]}'><thead><tr><th>Last Name</th><th>First Name</th><th>Email</th><th>Title</th></tr></thead><tbody>";
