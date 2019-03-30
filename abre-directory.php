@@ -38,7 +38,7 @@ function directorylookup($atts, $content=null)
 		?>
 
 		</tbody>
-</table>
+	</table>
 
 <?php
 }
