@@ -46,5 +46,4 @@ function directorylookup($atts, $content=null)
 //Create Shortcuts
 add_shortcode( 'directory_lookup', 'directorylookup' );
 
-
 ?>
