@@ -9,6 +9,7 @@
 	* Author URI: https://abre.io
 */
 
+//Looks up directory information from provided Abre Domain
 function directorylookup($atts, $content=null)
 {
 	extract(shortcode_atts( array('building' => '','heading' => ''), $atts));
@@ -26,6 +27,8 @@ function directorylookup($atts, $content=null)
 	echo "</tbody></table></div>";
 
 }
+
+//Create Shortcuts
 add_shortcode( 'directory_lookup', 'directorylookup' );
 
 
